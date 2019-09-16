@@ -1,0 +1,108 @@
+$bgRed: #BF0D00;
+$lightRed: #FF1101;
+$darkRed: #800800;
+$gray: #D4D4D4;
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bgRed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.menu{
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 35px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    ::after{
+        width: 100%;
+        height: 108px;
+        background-color: $gray;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left:0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+
+    .crest{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+
+        &__img{
+            height: 50px;
+            width: 45px;
+            margin-right: 12px;
+        }
+        &__text{
+            display: flex;
+            flex-direction: column;
+            align-content: center;            
+            
+
+            h1{
+                font-size: 1.1rem;
+                font-weight: 700; 
+            }
+            span{
+                font-size: 0.75rem;
+                
+            }
+        }
+    }
+
+    .nav{
+
+
+        
+        .hamburger{
+            padding: 10px;
+            display: inline-block;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            margin: 0;
+
+
+            &__inner{
+                width: 100%;
+                height: 3px;
+                background-color: $gray;
+                position: absolute;
+            }
+
+            &__box{
+                width: 35px;
+                height: 24px;
+                display: inline-block;
+                position: relative;
+            }
+        }
+
+        .navigation{
+            opacity:0;
+        }
+    }
+    
+    
+}

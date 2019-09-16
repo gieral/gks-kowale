@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #BF0D00;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.menu {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu ::after {
+  width: 100%;
+  height: 108px;
+  background-color: #D4D4D4;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu .crest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.menu .crest__img {
+  height: 50px;
+  width: 45px;
+  margin-right: 12px;
+}
+
+.menu .crest__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.menu .crest__text h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.menu .crest__text span {
+  font-size: 0.75rem;
+}
+
+.menu .nav .hamburger {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.menu .nav .hamburger__inner {
+  width: 100%;
+  height: 3px;
+  background-color: #D4D4D4;
+  position: absolute;
+}
+
+.menu .nav .hamburger__box {
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.menu .nav .navigation {
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
